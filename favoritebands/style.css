@@ -1,55 +1,35 @@
-/*
-  styles.css
-  The Absolute Most Basic Stylesheet.
-  No nth-child, no last-child, no special row styling.
-*/
-
-/* === GLOBAL STYLES === */
 body {
-    /* Basic, default font and margin */
-    font-family: sans-serif;
+    font-family: 'Playfair Display', serif;
+    background-color: #f9f9f9;
+    color: #333;
     margin: 20px;
 }
 
 h1, h2 {
-    /* Basic left alignment and spacing */
-    text-align: left;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    text-align: center;
+    color: #444;
 }
 
-/* === TABLE STYLING === */
 table {
-    width: 80%;
-    margin: 10px 0 30px 0;
-    /* Essential: ensures borders line up */
+    width: 100%;
     border-collapse: collapse;
-    /* Clearly visible border for the entire table */
-    border: 1px solid black; 
+    margin-bottom: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
 }
 
 th {
-    padding: 8px;
-    text-align: left;
-    /* Borders for header cells */
-    border: 1px solid black;
-    /* Light header background */
-    background-color: #ccc; 
+    background-color: #f2f2f2;
+    font-weight: bold;
 }
 
-td {
-    padding: 8px;
-    /* Borders for data cells */
-    border: 1px solid black;
-}
-
-/*
-    *** REMOVED: tbody tr:nth-child(even) { background-color: #f2f2f2; } ***
-    All rows will now have the same background (white).
-*/
-
-/* Image in Table Cell */
-td img {
-    display: block;
-    margin: 0 auto;
+img {
+    border-radius: 4px;
 }
