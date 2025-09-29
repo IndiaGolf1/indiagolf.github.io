@@ -1,42 +1,55 @@
+/*
+  styles.css
+  The Absolute Most Basic Stylesheet.
+  No nth-child, no last-child, no special row styling.
+*/
+
+/* === GLOBAL STYLES === */
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f0f0f0;
+    /* Basic, default font and margin */
+    font-family: sans-serif;
     margin: 20px;
 }
 
-h1 {
-    text-align: center;
-    color: #333;
+h1, h2 {
+    /* Basic left alignment and spacing */
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
-h2 {
-    color: #007BFF;
-    margin-top: 30px;
-}
-
+/* === TABLE STYLING === */
 table {
-    width: 100%;
+    width: 80%;
+    margin: 10px 0 30px 0;
+    /* Essential: ensures borders line up */
     border-collapse: collapse;
-    margin-bottom: 40px;
-    background-color: white;
+    /* Clearly visible border for the entire table */
+    border: 1px solid black; 
 }
 
 th {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    border: 1px solid #333;
+    padding: 8px;
     text-align: left;
+    /* Borders for header cells */
+    border: 1px solid black;
+    /* Light header background */
+    background-color: #ccc; 
 }
 
 td {
-    padding: 10px;
-    border: 1px solid #ccc;
-    vertical-align: top;
+    padding: 8px;
+    /* Borders for data cells */
+    border: 1px solid black;
 }
 
-tr:last-child td {
-    background-color: #e0f0ff;
-    text-align: center;
-    font-style: italic;
+/*
+    *** REMOVED: tbody tr:nth-child(even) { background-color: #f2f2f2; } ***
+    All rows will now have the same background (white).
+*/
+
+/* Image in Table Cell */
+td img {
+    display: block;
+    margin: 0 auto;
 }
