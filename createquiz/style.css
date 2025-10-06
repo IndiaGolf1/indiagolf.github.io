@@ -1,0 +1,36 @@
+/* Basic page style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+}
+
+/* Centered heading */
+h2 {
+    text-align: center;
+}
+
+/* Space between questions */
+form p {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Inputs and labels */
+label {
+    margin-left: 5px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-top: 5px;
+}
+
+/* Buttons */
+input[type="submit"],
+input[type="reset"] {
+    margin-top: 20px;
+    padding: 5px 15px;
+}
+
