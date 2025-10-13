@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <title>Tax Calculator</title>
+</head>
+<body>
+
+    <h1>Tax Calculator (8.25%)</h1>
+
+    <form>
+        <input type="text" id="a" placeholder="Enter Amount" required>
+        
+        <br><br>
+        
+        <button type="button" onclick="c()">Calculate</button>
+
+        <br><br>
+
+        Tax: <input type="text" id="t" disabled>
+
+        <br><br>
+        
+        Total: <input type="text" id="s" disabled>
+    </form>
+
+    <script>
+        //Use letters and function names to simplify code
+        const R = 0.0825; // Rate
+
+         //Calculate function
+        function c() {
+            const A = parseFloat(document.getElementById('a').value); // Amount
+            
+            //Nan will be shown for any wrong input
+            const T = A * R; // Tax Amount
+            const S = A + T; // Sum (Total)
+
+            //Display results formatted to two decimal places
+            document.getElementById('t').value = T.toFixed(2);
+            document.getElementById('s').value = S.toFixed(2);
+        }
+    </script>
+
+</body>
+</html>
