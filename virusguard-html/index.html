@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VirusGuard — Learn About Computer Viruses</title>
+<meta name="description" content="An educational site about computer viruses: types, history, prevention, and a quiz.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html"><i class="bi bi-shield-shaded text-success me-2"></i>VirusGuard</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="types.html">Types</a></li>
+        <li class="nav-item"><a class="nav-link" href="history.html">History</a></li>
+        <li class="nav-item"><a class="nav-link" href="prevention.html">Prevention</a></li>
+        <li class="nav-item"><a class="nav-link" href="quiz.html">Quiz</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container text-center">
+    <h1 class="display-4">Defend Your Digital Life</h1>
+    <p class="lead">Learn how computer viruses work — and how to stop them.</p>
+    <a href="quiz.html" class="btn btn-success btn-lg mt-3">Take the Quiz</a>
+  </div>
+</header>
+
+<main class="container py-5">
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card card-feature h-100 shadow-sm">
+        <div class="card-body">
+          <h2 class="h5"><i class="bi bi-bug text-danger me-2"></i>What Is a Virus?</h2>
+          <p>Malicious code that replicates by attaching itself to files or programs.</p>
+          <a href="types.html" class="btn btn-outline-primary btn-sm">Explore types</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card card-feature h-100 shadow-sm">
+        <div class="card-body">
+          <h2 class="h5"><i class="bi bi-share text-warning me-2"></i>How They Spread</h2>
+          <p>Email attachments, malicious downloads, USB drives, and infected websites.</p>
+          <a href="history.html" class="btn btn-outline-primary btn-sm">See history</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card card-feature h-100 shadow-sm">
+        <div class="card-body">
+          <h2 class="h5"><i class="bi bi-shield-check text-success me-2"></i>How to Defend</h2>
+          <p>Patch software, use antivirus, back up data, and stay phishing-aware.</p>
+          <a href="prevention.html" class="btn btn-outline-primary btn-sm">Prevention tips</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row align-items-center mt-5">
+    <div class="col-md-6">
+      <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=80" alt="Cybersecurity dashboard" class="img-fluid rounded shadow">
+    </div>
+    <div class="col-md-6">
+      <h2>Why Awareness Matters</h2>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Over 450,000 new malware samples are detected daily.</li>
+        <li class="list-group-item">Ransomware costs businesses billions every year.</li>
+        <li class="list-group-item">Most attacks succeed via human error, not technology.</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-dark text-light py-4 mt-5">
+  <div class="container d-flex flex-wrap justify-content-between gap-3">
+    <div>
+      <h6><i class="bi bi-shield-shaded text-success me-2"></i>VirusGuard</h6>
+      <small class="text-secondary">Educational site about computer viruses.</small>
+    </div>
+    <div>
+      <h6>External Resources</h6>
+      <ul class="list-unstyled small mb-0">
+        <li><a class="link-light" href="https://www.cisa.gov/" target="_blank">CISA.gov</a></li>
+        <li><a class="link-light" href="https://www.kaspersky.com/resource-center" target="_blank">Kaspersky Resource Center</a></li>
+      </ul>
+    </div>
+    <div class="align-self-end small text-secondary">© 2026 VirusGuard</div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
