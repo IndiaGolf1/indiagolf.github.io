@@ -1,0 +1,9 @@
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f8f9fa; }
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80') center/cover;
+    color: white; padding: 100px 0;
+}
+.footer { background-color: #212529; color: white; padding: 30px 0; margin-top: 50px; }
+.navbar-brand { font-weight: bold; color: #ff4d4d !important; }
+.card { transition: transform 0.2s; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+.card:hover { transform: translateY(-5px); }
