@@ -1,18 +1,38 @@
-/* VirusGuard custom styles */
-:root {
-  --vg-dark: #0f172a;
-  --vg-accent: #16a34a;
+/* VirusGuard Simplified Styles */
+
+body { 
+  font-family: system-ui, -apple-system, sans-serif; 
+  line-height: 1.6;
 }
-body { font-family: 'Segoe UI', system-ui, sans-serif; }
+
+/* Custom Header Styling */
 .hero {
+  background: #0f172a;
   background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
-  color: #fff;
-  padding: 4rem 0;
-  border-radius: 0 0 1rem 1rem;
+  color: #ffffff;
+  padding: 60px 0;
+  border-bottom: 4px solid #16a34a;
 }
-.hero h1 { font-weight: 800; letter-spacing: -0.5px; }
-.card-feature { transition: transform .2s ease, box-shadow .2s ease; }
-.card-feature:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(0,0,0,.1); }
-footer a { text-decoration: none; }
-footer a:hover { text-decoration: underline; }
-.nav-link.active { color: #22c55e !important; font-weight: 600; }
+
+/* Feature Cards */
+.card-feature { 
+  transition: transform 0.2s; 
+}
+
+.card-feature:hover { 
+  transform: translateY(-5px); 
+}
+
+/* Navigation & Footer */
+.nav-link.active { 
+  color: #22c55e !important; 
+  font-weight: bold; 
+}
+
+footer a { 
+  text-decoration: none; 
+}
+
+footer a:hover { 
+  text-decoration: underline; 
+}
