@@ -1,85 +1,77 @@
 /* style.css */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
     margin: 0;
+    background-color: #f0f0f0;
 }
 
-/* Simplified Layout Classes */
-.main-wrapper {
-    max-width: 1100px;
-    margin: 20px auto;
-    padding: 0 15px;
-}
-
-.flex-container {
+/* Simple Navigation */
+.nav-header {
+    background-color: #333;
+    padding: 20px;
     display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-.content-box {
-    flex: 2;
-    min-width: 300px;
-}
-
-.sidebar {
-    flex: 1;
-    min-width: 250px;
-}
-
-/* Navigation */
-.custom-nav {
-    background-color: #343a40;
-    padding: 15px;
-    display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
-.nav-brand {
+.brand-name {
     color: white;
+    font-size: 24px;
     text-decoration: none;
-    font-size: 1.5rem;
     font-weight: bold;
 }
 
-.nav-links {
-    list-style: none;
+.menu-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* Main Layout */
+.page-wrapper {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* This makes images stay next to text properly */
+.flex-row {
     display: flex;
-    gap: 20px;
-    margin: 0;
+    gap: 30px;
+    align-items: flex-start;
 }
 
-.nav-links a {
-    color: #ccc;
-    text-decoration: none;
+.text-column {
+    flex: 2;
 }
 
-.nav-links a.active {
-    color: white;
-    font-weight: bold;
+.image-column {
+    flex: 1;
 }
 
-/* Hero & Footer */
-.hero-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/matrix.jpg') center/cover;
-    color: white;
-    padding: 80px 20px;
-    text-align: center;
-}
-
-.footer {
-    background-color: #343a40;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
-}
-
-.standard-img {
-    max-width: 100%;
+.fluid-img {
+    width: 100%;
     height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+.footer-bar {
+    text-align: center;
+    padding: 30px;
+    background: #333;
+    color: white;
+    margin-top: 50px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
 }
