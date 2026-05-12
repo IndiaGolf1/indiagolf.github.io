@@ -2,49 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>History | TechWorm</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">TechWorm</a>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="types.html">Types & Symptoms</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="history.html">History</a></li>
-                    <li class="nav-item"><a class="nav-link" href="report.html">Report an Incident</a></li>
-                </ul>
-            </div>
+    <nav class="nav-header">
+        <a href="index.html" class="brand-name">TechWorm</a>
+        <div class="menu-links">
+            <a href="index.html">Home</a>
+            <a href="types.html">Types</a>
+            <a href="history.html">History</a>
+            <a href="report.html">Report</a>
         </div>
     </nav>
 
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-8">
+    <div class="page-wrapper">
+        <div class="flex-row">
+            <div class="text-column">
                 <h2>A Brief History of Computer Viruses</h2>
-                <p>The concept of self-replicating computer programs dates back to the 1940s.</p>
-                
-                <ol class="list-group list-group-numbered mt-4 mb-5">
-                    <li class="list-group-item"><strong>Creeper (1971):</strong> Created as an experiment on the ARPANET.</li>
-                    <li class="list-group-item"><strong>Brain (1986):</strong> The first PC virus, targeting floppy disks.</li>
-                    <li class="list-group-item"><strong>ILOVEYOU (2000):</strong> A massive email worm.</li>
-                    <li class="list-group-item"><strong>Stuxnet (2010):</strong> Sophisticated worm targeting industrial systems.</li>
-                    <li class="list-group-item"><strong>WannaCry (2017):</strong> Global ransomware attack.</li>
+                <p>Viruses have evolved from experiments to global threats.</p>
+                <ol>
+                    <li><strong>Creeper (1971):</strong> The very first experiment.</li>
+                    <li><strong>Brain (1986):</strong> The first PC virus.</li>
+                    <li><strong>ILOVEYOU (2000):</strong> A massive email worm.</li>
+                    <li><strong>Stuxnet (2010):</strong> Targeted industrial systems.</li>
                 </ol>
             </div>
-            <div class="col-md-4">
-                <img src="img/history.avif" alt="Cybersecurity Code" class="virus-img mt-5">
-                <p class="text-muted mt-2 text-center"><small>Modern threats require modern defenses.</small></p>
+            <div class="image-column">
+                <img src="img/history.avif" class="fluid-img" alt="History of code">
             </div>
         </div>
     </div>
 
-    <footer class="footer fixed-bottom">
+    <footer class="footer-bar">
         <p>&copy; 2026 TechWorm.</p>
     </footer>
 
